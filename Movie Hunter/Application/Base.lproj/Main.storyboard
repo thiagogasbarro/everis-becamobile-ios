@@ -54,31 +54,19 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="imagemFilme" translatesAutoresizingMaskIntoConstraints="NO" id="UpE-J6-bHm">
-                                                            <rect key="frame" x="34" y="32" width="93" height="75"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="162" height="238"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="filmeNome" text="Nome Do Filme" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1G4-Wt-pcI">
-                                                            <rect key="frame" x="33" y="145" width="96" height="41"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
-                                                    <constraint firstItem="UpE-J6-bHm" firstAttribute="top" secondItem="gnG-Ld-cye" secondAttribute="topMargin" constant="24" id="2ti-RO-rfa"/>
-                                                    <constraint firstItem="UpE-J6-bHm" firstAttribute="leading" secondItem="gnG-Ld-cye" secondAttribute="leadingMargin" constant="26" id="8li-LA-rw3"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="UpE-J6-bHm" secondAttribute="trailing" constant="27" id="PWg-Vr-CJa"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="UpE-J6-bHm" secondAttribute="trailing" constant="27" id="QN4-FM-kBQ"/>
-                                                    <constraint firstItem="1G4-Wt-pcI" firstAttribute="leading" secondItem="gnG-Ld-cye" secondAttribute="leadingMargin" constant="25" id="VlC-0C-yDm"/>
-                                                    <constraint firstItem="UpE-J6-bHm" firstAttribute="leading" secondItem="gnG-Ld-cye" secondAttribute="leadingMargin" constant="26" id="Z8I-2e-V32"/>
-                                                    <constraint firstAttribute="trailingMargin" secondItem="1G4-Wt-pcI" secondAttribute="trailing" constant="25" id="ZFD-g5-CjE"/>
-                                                    <constraint firstItem="1G4-Wt-pcI" firstAttribute="top" secondItem="UpE-J6-bHm" secondAttribute="bottom" constant="38" id="b9s-8i-hJ1"/>
-                                                    <constraint firstAttribute="bottomMargin" secondItem="1G4-Wt-pcI" secondAttribute="bottom" constant="44" id="oxp-Ci-qKX"/>
+                                                    <constraint firstItem="UpE-J6-bHm" firstAttribute="leading" secondItem="gnG-Ld-cye" secondAttribute="leading" id="3BU-gO-oyV"/>
+                                                    <constraint firstAttribute="trailing" secondItem="UpE-J6-bHm" secondAttribute="trailing" id="IRa-2g-HLe"/>
+                                                    <constraint firstItem="UpE-J6-bHm" firstAttribute="top" secondItem="gnG-Ld-cye" secondAttribute="top" id="Tfo-g9-4g5"/>
+                                                    <constraint firstAttribute="bottom" secondItem="UpE-J6-bHm" secondAttribute="bottom" id="eAB-yI-WdI"/>
                                                 </constraints>
                                                 <size key="customSize" width="162" height="238"/>
                                                 <connections>
                                                     <outlet property="imagemFilme" destination="UpE-J6-bHm" id="2gb-hz-bfA"/>
-                                                    <outlet property="nomeFilme" destination="1G4-Wt-pcI" id="Rc0-kW-Nph"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>

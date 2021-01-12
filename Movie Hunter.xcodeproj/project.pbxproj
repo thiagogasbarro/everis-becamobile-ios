@@ -54,6 +54,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0615BDAE25AE173A00E4734B /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				06F3521325A73AE700A84229 /* AppDelegate.swift */,
+				06F3521725A73AE700A84229 /* Main.storyboard */,
+				06F3522225A73AE800A84229 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		0615BDAF25AE174300E4734B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				06F9D43725AB5C0000292A4F /* CollectionViewCell.swift */,
+				06F3521525A73AE700A84229 /* ViewController.swift */,
+				062F416525A8E73200028F05 /* DetalhesViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0615BDB025AE174C00E4734B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0615BDB125AE175800E4734B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				06F3522F25A7453700A84229 /* FilmeAPI.swift */,
+				062F415E25A888A600028F05 /* ListaFilmes.swift */,
+				062F416025A8C07F00028F05 /* Filme.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0615BDB225AE176000E4734B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0615BDB325AE176A00E4734B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0615BDB425AE177500E4734B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		0615BDB525AE177F00E4734B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		06F3520725A73AE700A84229 = {
 			isa = PBXGroup;
 			children = (
@@ -76,44 +141,19 @@
 		06F3521225A73AE700A84229 /* Movie Hunter */ = {
 			isa = PBXGroup;
 			children = (
-				06F3522825A73B4800A84229 /* filme */,
+				0615BDAE25AE173A00E4734B /* Application */,
+				0615BDAF25AE174300E4734B /* Views */,
+				0615BDB025AE174C00E4734B /* ViewModels */,
+				0615BDB125AE175800E4734B /* Models */,
+				0615BDB225AE176000E4734B /* Core */,
+				0615BDB325AE176A00E4734B /* Service */,
+				0615BDB425AE177500E4734B /* Helper */,
+				0615BDB525AE177F00E4734B /* Resources */,
 				06F3522B25A73BB100A84229 /* Componentes */,
-				06F3521325A73AE700A84229 /* AppDelegate.swift */,
-				06F3521725A73AE700A84229 /* Main.storyboard */,
 				06F3521D25A73AE800A84229 /* Assets.xcassets */,
-				06F3522225A73AE800A84229 /* Info.plist */,
 				06F3521A25A73AE700A84229 /* Movie_Hunter.xcdatamodeld */,
 			);
 			path = "Movie Hunter";
-			sourceTree = "<group>";
-		};
-		06F3522825A73B4800A84229 /* filme */ = {
-			isa = PBXGroup;
-			children = (
-				06F9D43325AB5BC500292A4F /* View */,
-				06F3522A25A73B8A00A84229 /* Controller */,
-				06F3522925A73B5100A84229 /* Model */,
-			);
-			path = filme;
-			sourceTree = "<group>";
-		};
-		06F3522925A73B5100A84229 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				06F3522F25A7453700A84229 /* FilmeAPI.swift */,
-				062F415E25A888A600028F05 /* ListaFilmes.swift */,
-				062F416025A8C07F00028F05 /* Filme.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		06F3522A25A73B8A00A84229 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				06F3521525A73AE700A84229 /* ViewController.swift */,
-				062F416525A8E73200028F05 /* DetalhesViewController.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		06F3522B25A73BB100A84229 /* Componentes */ = {
@@ -122,14 +162,6 @@
 				062F416225A8C2CC00028F05 /* Configuracao.swift */,
 			);
 			path = Componentes;
-			sourceTree = "<group>";
-		};
-		06F9D43325AB5BC500292A4F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				06F9D43725AB5C0000292A4F /* CollectionViewCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		13016F39758FB7F2BE8168D8 /* Pods */ = {
@@ -227,11 +259,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Movie Hunter/Pods-Movie Hunter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -411,7 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Movie Hunter/Info.plist";
+				INFOPLIST_FILE = "Movie Hunter/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -429,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Movie Hunter/Info.plist";
+				INFOPLIST_FILE = "Movie Hunter/Application/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

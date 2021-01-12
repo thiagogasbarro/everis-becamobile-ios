@@ -16,19 +16,10 @@ class CollectionViewCell: UICollectionViewCell {
     // MARK: - IBOutlets
     
     @IBOutlet weak var imagemFilme: UIImageView!
-    @IBOutlet weak var nomeFilme: UILabel!
-    
-    
-    
     
     func configuraCelula(_ filme: Filme) {
-
-        nomeFilme.text = filme.title
-        
-        Alamofire.request("https://image.tmdb.org/t/p/w500").responseImage { response in
-            debugPrint(response)
-            debugPrint(response.result)
-
+        let urlImagem = "https://image.tmdb.org/t/p/w500\(filme.posterPath)"
+        Alamofire.request(urlImagem).responseImage { response in
             if case .success(let imageRecuperada) = response.result {
                 self.imagemFilme.image = imageRecuperada
             }

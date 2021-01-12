@@ -15,10 +15,6 @@ class DetalhesViewController: UIViewController {
     @IBOutlet weak var nomeDoFilme: UILabel!
     @IBOutlet weak var descricaoFilme: UILabel!
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         if let filme = filmeSelecionado {
