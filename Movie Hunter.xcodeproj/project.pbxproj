@@ -117,6 +117,7 @@
 		0615BDB425AE177500E4734B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				062F416225A8C2CC00028F05 /* Configuracao.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -124,6 +125,7 @@
 		0615BDB525AE177F00E4734B /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				06F3521D25A73AE800A84229 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -158,19 +160,9 @@
 				0615BDB325AE176A00E4734B /* Service */,
 				0615BDB425AE177500E4734B /* Helper */,
 				0615BDB525AE177F00E4734B /* Resources */,
-				06F3522B25A73BB100A84229 /* Componentes */,
-				06F3521D25A73AE800A84229 /* Assets.xcassets */,
 				06F3521A25A73AE700A84229 /* Movie_Hunter.xcdatamodeld */,
 			);
 			path = "Movie Hunter";
-			sourceTree = "<group>";
-		};
-		06F3522B25A73BB100A84229 /* Componentes */ = {
-			isa = PBXGroup;
-			children = (
-				062F416225A8C2CC00028F05 /* Configuracao.swift */,
-			);
-			path = Componentes;
 			sourceTree = "<group>";
 		};
 		13016F39758FB7F2BE8168D8 /* Pods */ = {

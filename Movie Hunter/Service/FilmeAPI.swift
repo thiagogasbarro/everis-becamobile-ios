@@ -12,8 +12,6 @@ import CoreData
 
 class FilmeAPI: NSObject {
     
-    // MARK - GET Filmes
-
     func recuperaFilmes(_ completion: @escaping ([Filme]) -> Void) {
         
             guard let key = Configuracao().getKeyPadrao() else { return }
