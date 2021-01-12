@@ -25,12 +25,12 @@ class CollectionViewCell: UICollectionViewCell {
 
         nomeFilme.text = filme.title
         
-        Alamofire.request("https://www.themoviedb.org/t/p/w440_and_h660_face\(String(describing: filme.posterPath))").responseImage { response in
+        Alamofire.request("https://image.tmdb.org/t/p/w500").responseImage { response in
             debugPrint(response)
             debugPrint(response.result)
 
-            if case .success(let image) = response.result {
-                self.imagemFilme.image = image
+            if case .success(let imageRecuperada) = response.result {
+                self.imagemFilme.image = imageRecuperada
             }
         }
         layer.borderWidth = 0.5
