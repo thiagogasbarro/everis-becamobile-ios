@@ -7,8 +7,6 @@
 //
 
 import UIKit
-import CoreData
-import Alamofire
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
 
