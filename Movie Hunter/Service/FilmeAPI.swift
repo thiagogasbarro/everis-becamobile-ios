@@ -10,6 +10,8 @@ import UIKit
 import Alamofire
 import CoreData
 
+
+
 class FilmeAPI: NSObject {
     
     func recuperaFilmes(_ completion: @escaping ([Filme]) -> Void) {

@@ -10,11 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-
 class CollectionViewCell: UICollectionViewCell {
-    
-    // MARK: - IBOutlets
-    
     @IBOutlet weak var imagemFilme: UIImageView!
     
     func configuraCelula(_ filme: Filme) {
