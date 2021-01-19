@@ -12,6 +12,7 @@ import AlamofireImage
 
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imagemFilme: UIImageView!
+    @IBOutlet weak var titleFilme: UILabel!
     
     func configuraCelula(_ filme: Filme) {
         let urlImagem = "https://image.tmdb.org/t/p/w500\(filme.posterPath)"
@@ -19,6 +20,7 @@ class CollectionViewCell: UICollectionViewCell {
             if case .success(let imageRecuperada) = response.result {
                 self.imagemFilme.image = imageRecuperada
             }
+            self.titleFilme.text = filme.title
         }
         layer.borderWidth = 0.5
         layer.borderColor = UIColor(red: 85.0/255.0, green: 85.0/255.0, blue: 85.0/255.0, alpha: 1).cgColor

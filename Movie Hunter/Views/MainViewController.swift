@@ -31,9 +31,7 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         controller.filmeSelecionado = filme
         self.navigationController?.pushViewController(controller, animated: true)
     }
-    // MARK: - Properties
 
-    // MARK: - Constructors
     
     // MARK: - Life Cycle
 
@@ -44,7 +42,9 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
         FilmeAPI().recuperaFilmes { (listaDeFilme) in
             self.listaDeFilme = listaDeFilme
             self.collectionFilmes.reloadData()
+    
         }
+        
         
     }
 }
